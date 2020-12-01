@@ -1,190 +1,54 @@
 <html lang="it">
-	<head>
-		<meta charset="utf-8">
-		<meta name="generator" content="AlterVista - Editor HTML"/>
-        <meta name=”viewport” content=”width=device-width, initial-scale=1″>
-    	<!-- <link href="stile.css" type="text/css" rel="stylesheet"> -->
-		<title>Home | A. Drago</title>
+<head>
+    <meta charset="utf-8">
+    <meta name=”viewport” content=”width=device-width, initial-scale=1″>
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <title>Home | A. Drago</title>
+</head>
+
+<body>
+    <div id="page">
+        <div id="header">
+            <div id="logo">
+                <p>ipotetico<br>logo</p>
+            </div><!--#logo-->
+            
+            <div id="contacts">
+                <p>Contatti<br>es. e-Mail: <a href="">mail</a>
+            </div><!--#contacts-->
+            
+            <h1>Portale di Antonino Drago</h1>
+        </div><!--#header-->
+
+        <div id="menu">
+            <button class="bmenu set">Home</button>
+            <a href="pag1.html"><button class="bmenu">Sezione 1</button></a>
+            <a href="pag2.html"><button class="bmenu">Sezione 2</button></a>
+            <a href="pag3.html"><button class="bmenu">Sezione 3</button></a>
+            <a href=""><button class="bmenu">Ecc...</button></a>
+        </div><!--#menu-->
+
+        <div id="main">
+            <h2>Titolo</h2>
+            <p>paragrafo...</p>
+        </div><!--#main-->
         
-        <style>
-
-html * {
-    margin: 0;
-    padding: 0;
-}
-
-
-body {
-	color: black;
-    font-family: "Candara";
-    font-style: sans-serif;
-	background-color: white;
-    //background-image: url("Immagini/texture2.png");
-}
-
-h1 {
-	color: black;
-    font-size: 200%;
-    float: top;
-}
-
-img {
-	width: 100%;
-}
-
-p.copy {
-	color: #888888;
-    font-size: 80%;
-    text-align: center;
-}
-
-.button {
-    background-color: #DDDDDD;
-    color: black; 
-    border: none;
-    float: left;
-    height: 100%;
-    width: 20%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    transition-duration: 0.5s;
-    cursor: pointer;
-}
-
-.bmenu:hover {
-	color: black;
-    background-color: #AAAAAA;
-	border-bottom: 5px solid black;
-}
-
-.set {
-	border-bottom: 5px solid black;
-}
-
-#page {
-  	position: relative;
-    border-left: 10px solid linear-gradient(to left, black, white, white);
-  	height: 100%;
-  	width: 60%;
-    left: 20%;
-  	overflow: block;
-}
-
-#header {
-	position: absolute;
-    background: linear-gradient(to top, #DDDDDD, white, white);
-    text-align: center;
-    width: 100%;
-	height: 8%;
-    top: 0%;
-    padding: 1% 0% 1% 0%;
-    overflow: block;
-}
-
-#logo {
-	position: absolute;
-    text-align: left;
-    width: 20%;
-	height: 100%;
-    left: 0%;
-    padding: 0% 1% 0% 1%;
-    overflow: block;
-}
-
-#contacts {
-	position: absolute;
-    text-align: right;
-    width: 20%;
-	height: 100%;
-    right: 0%;
-    padding: 0% 1% 0% 1%;
-    overflow: block;
-}
-
-#menu {
-	position: absolute;
-    width: 100%;
-    height: 5%;
-    top: 10%;
-    overflow: auto;
-}
-
-#main {
-	position: absolute;
-    width: 70%;
-    height: 78%;
-    bottom: 2%;
-    padding: 1%;
-	overflow: auto;
-}
-
-#side {
-	position: absolute;
-    background-color: #DDDDDD;
-    width: 26%;
-    height: 78%;
-    bottom: 2%;
-    right: 0%;
-    padding: 1%;
-	overflow: auto;
-}
-
-#footer {
-	position: absolute;
-    width: 100%;
-    height: 2%;
-    bottom: 0%;
-    overflow: auto;
-}
-
-        </style>
-	</head>
-
-	<body>
-    	<div id="page">
-            <div id="header">
-            	<div id="logo">
-                	<p>ipotetico<br>logo</p>
-                </div><!--#logo-->
-                
-                <div id="contacts">
-                	<p>Contatti<br>es. e-Mail: <a href="">mail</a>
-                </div><!--#contacts-->
-                
-              	<h1>Portale di Antonino Drago</h1>
-            </div><!--#header-->
-
-            <div id="menu">
-              	<button class="button bmenu set">Home</button>
-              	<a href="pag1.html"><button class="button bmenu">Sezione 1</button></a>
-              	<a href="pag2.html"><button class="button bmenu">Sezione 2</button></a>
-              	<a href="pag3.html"><button class="button bmenu">Sezione 3</button></a>
-              	<a href=""><button class="button bmenu">Ecc...</button></a>
-            </div><!--#menu-->
-
-            <div id="main">
-				<h2>Titolo</h2>
-				<p>paragrafo...</p>
-            </div><!--#main-->
+        <div id="side">
+            <img src="images/sagoma.jpg"/>
+            <br><br>
             
-            <div id="side">
-            	<img src="Immagini/sagoma.jpg"/>
-                <br><br>
-                
-                <p>
-                	Informazioni personali/<br>
-                	Breve introduzione/<br>
-                	Ciò che vuoi
-                </p>
-            </div><!--#side-->
-            
-            <div id="footer">
-            	<p class="copy">
-                	<tt>&copy; Azad Ahmadi, 2020</tt>
-                </p>
-            </div><!--#footer-->
-        </div><!--#page-->
-	</body>
+            <p>
+                Informazioni personali/<br>
+                Breve introduzione/<br>
+                Ciò che vuoi
+            </p>
+        </div><!--#side-->
+        
+        <div id="footer">
+            <p class="copy">
+                <tt>&copy; Azad Ahmadi, 2020</tt>
+            </p>
+        </div><!--#footer-->
+    </div><!--#page-->
+</body>
 </html>
