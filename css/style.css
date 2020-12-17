@@ -27,6 +27,10 @@ img.logo {
     float: left;
 }
 
+button {
+    outline: none;
+}
+
 .bmenu {
     color: var(--background);
     background-color: var(--greyDark);
