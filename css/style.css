@@ -89,33 +89,33 @@ a:hover {
 
 /*================ PAGE LAYOUT ================*/
 
-#page {
+.page {
     position: absolute;
     height: 100%;
     width: 100%;
     overflow: auto;
 }
 
-#header-out {
+.header-wrap {
     position: absolute;
     background: var(--greyDark);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     overflow: block;
 }
 
-#header-in {
+.header {
     text-align: left;
     position: absolute;
     overflow: block;
 }
 
-#menu0, #menu1, #menu2 {
+.menu {
     position: absolute;
     overflow: block;
     display: none;
 }
 
-#main0, #main1, #main2 {
+.main {
     position: relative;
     overflow: block;
     display: none;
