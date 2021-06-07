@@ -15,12 +15,17 @@ body {
 }
 
 h1 {
+    font-size: 32px;
     color: var(--background);
     padding-top: 16px;
 }
 
 h2 {
     color: var(--accentMedium);
+}
+
+p.list {
+    padding-bottom: 16px;
 }
 
 button {
@@ -38,7 +43,7 @@ button {
     text-decoration: none;
     display: block;
     font-size: 16px;
-    transition-duration: 0.2s ease;
+    transition: 0.2s ease;
     cursor: pointer;
 }
 
@@ -62,8 +67,8 @@ iframe {
     position: absolute;
     height: 100%;
     width: 100%;
-    padding: none;
     border: none;
+    overflow: visible;
     background: transparent;
 }
 
@@ -78,126 +83,49 @@ iframe {
 
 .header-wrap {
     position: absolute;
+    width: 100%;
+    height: 64px;
+    top: 0;
     background: var(--greyDark);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-    overflow: block;
+    z-index: 100;
 }
 
 .header {
-    text-align: left;
     position: absolute;
-    overflow: block;
+    height: 100%;
+    width: 1200px;
+    margin-left: -600px;
+    left: 50%;
+    top: 0%;
+    overflow: hidden;
 }
 
 .menu {
     position: absolute;
-    overflow: block;
+    width: 60%;
+    height: 100%;
+    right: 0%;
+    top: 0%;
 }
 
 .main {
     position: relative;
+    width: 1200px;
+    margin-left: -600px;
+    left: 50%;
+    top: 64px;
+    padding-top: 54px;
     overflow: visible;
-    padding: 0;
-    padding-top: 16px;
 }
 
 @media screen and (min-width: 1350px) {
-    h1 {
-        font-size: 32px;
-    }
-
-    .header-wrap {
-        width: 100%;
-        height: 64px;
-        top: 0;
-    }
-
-    .header {
-        height: 100%;
-        width: 1200px;
-        margin-left: -600px;
-        left: 50%;
-        top: 0%;
-    }
-
-    .menu {
-        width: 60%;
-        height: 100%;
-        right: 0%;
-        top: 0%;
-    }
-
-    .main {
-        width: 1200px;
-        margin-left: -600px;
-        left: 50%;
-        top: 64px;
-    }
 }
 
 @media screen and (max-width: 1350px) and (min-width: 720px) {
-    h1 {
-        font-size: 32px;
-    }
-
-    .header-wrap {
-        width: 100%;
-        height: 64px;
-        top: 0;
-    }
-
-    .header {
-        height: 100%;
-        width: 1200px;
-        margin-left: -600px;
-        left: 50%;
-        top: 0%;
-    }
-
-    .menu {
-        width: 60%;
-        height: 100%;
-        right: 0%;
-        top: 0%;
-    }
-
-    .main {
-        width: 1200px;
-        margin-left: -600px;
-        left: 50%;
-        top: 64px;
-    }
 }
 
 @media screen and (max-width: 720px) {
-    h1 {
-        font-size: 20px;
-    }
-
-    .header-wrap {
-        width: 100%;
-        height: 64px;
-        top: 0;
-    }
-
-    .header {
-        width: 90%;
-        height: 100%;
-        left: 5%;
-        top: 0%;
-    }
-
-    .menu {
-        width: 100%;
-        height: 40%;
-        bottom: 0%;
-    }
-
-    .main {
-        width: 90%;
-        left: 5%;
-        top: 80px;
-    }
 }
 
 /*================ SCROLLBAR ================*/
