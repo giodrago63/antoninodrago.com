@@ -22,9 +22,17 @@ h1 {
 
 h2 {
     color: var(--accentMedium);
+    padding-bottom: 16px;
+}
+
+p.regular {
+    text-indent: 32px;
+    padding-bottom: 8px;
 }
 
 p.list {
+    text-indent: -32px;
+    padding-left: 32px;
     padding-bottom: 16px;
 }
 
@@ -50,6 +58,12 @@ button {
 .menu button:hover {
     background-color: var(--text);
     border-bottom: 5px solid var(--accentLight);
+}
+
+.main img {
+    width: 200px;
+    margin: 16px;
+    float: right;
 }
 
 a, a:visited {
