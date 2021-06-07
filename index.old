@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <title>Antonino Drago</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="SHORTCUT ICON" href="images/logo/logo-redwhite-round.png"/>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="page">
+        <div class="header-wrap">
+            <div class="header">
+                <h1>Antonino Drago</h1>
+
+                <div class="menu">
+                    <button onclick="load('pages/home.html')">Home</button>
+                    <button onclick="load('pages/attivita.html')">Attività</button>
+                    <button onclick="load('pages/pubblicazioni.html')">Pubblicazioni</button>
+                    <button onclick="load('pages/valori.html')">Valori</button>
+                    <button onclick="load('pages/materiali')">Materiali</button>
+                </div><!-- .menu -->
+            </div><!-- .header -->
+        </div><!-- .header-wrap -->
+
+        <div class="main">
+            <iframe id="frame" src="pages/home.html" onload="setHeight(this)"></iframe>
+        </div><!-- .main -->
+    </div><!--#page-->
+</body>
+</html>

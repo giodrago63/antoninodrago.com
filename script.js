@@ -1,7 +1,19 @@
-function load(url) {
-    document.getElementById("frame").src = url;
+function show(x) {
+    var id = [
+        "home",
+        "attivita",
+        "pubblicazioni",
+        "valori",
+        "materiali"
+    ]
+
+    for (i in id) {
+        document.getElementById(id[i]).style.display = "none";
+    }
+
+    document.getElementById(x).style.display = "block";
 }
 
-function setHeight(iframe) {
-    iframe.style.height = iframe.contentWindow.document.body.scrollHeight + "px";
+function load(url) {
+    document.getElementById("frame").src = url;
 }

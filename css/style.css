@@ -63,15 +63,6 @@ a:hover {
     transition: 0.2s ease;
 }
 
-iframe {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border: none;
-    overflow: visible;
-    background: transparent;
-}
-
 /*================ PAGE LAYOUT ================*/
 
 .page {
@@ -82,7 +73,7 @@ iframe {
 }
 
 .header-wrap {
-    position: absolute;
+    position: fixed;
     width: 100%;
     height: 64px;
     top: 0;
@@ -114,9 +105,13 @@ iframe {
     width: 1200px;
     margin-left: -600px;
     left: 50%;
-    top: 64px;
-    padding-top: 54px;
+    padding-top: 80px;
     overflow: visible;
+    display: none;
+}
+
+#home {
+    display: block;
 }
 
 @media screen and (min-width: 1350px) {
