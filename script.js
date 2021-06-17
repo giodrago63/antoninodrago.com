@@ -9,10 +9,15 @@ function start() {
 function show(x) {
     var id = [
         "home",
-        "attivita",
-        "pubblicazioni",
-        "valori",
-        "materiali"
+        "attivita1",
+        "attivita2",
+        "attivita3",
+        "pubblicazioni1",
+        "pubblicazioni2",
+        "pubblicazioni3",
+        "materiali1",
+        "materiali2",
+        "materiali3"
     ]
 
     for (i in id) {

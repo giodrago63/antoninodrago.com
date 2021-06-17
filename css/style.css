@@ -18,6 +18,7 @@ h1 {
     font-size: 32px;
     color: var(--background);
     padding-top: 16px;
+    display: inline-block;
 }
 
 h2 {
@@ -36,38 +37,9 @@ p.list {
     padding-bottom: 16px;
 }
 
-button {
-    outline: none;
-}
-
-.menu button {
-    color: var(--background);
-    background-color: var(--greyDark);
-    border: none;
-    float: left;
-    height: 100%;
-    width: 20%;
-    text-align: center;
-    text-decoration: none;
-    display: block;
-    font-size: 16px;
-    transition: 0.2s ease;
-    cursor: pointer;
-}
-
-.menu button:hover {
-    background-color: var(--text);
-    border-bottom: 5px solid var(--accentLight);
-}
-
-.main img {
-    width: 200px;
-    margin: 16px;
-    float: right;
-}
-
 a, a:visited {
     color: var(--accentMedium);
+    text-decoration: none;
     transition: 0.2s ease;
 }
 
@@ -75,6 +47,67 @@ a:hover {
     color: var(--background);
     background-color: var(--accentMedium);
     transition: 0.2s ease;
+}
+
+button {
+    outline: none;
+}
+
+.dropdown {
+    position: relative;
+    float: right;
+    width: 160px;
+    height: 100%;
+    display: inline-block;
+}
+
+.dropdown button {
+    color: var(--background);
+    background-color: var(--greyDark);
+    text-align: center;
+    border: none;
+    height: 100%;
+    width: 100%;
+    display: block;
+    font-size: 16px;
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.dropdown button:hover {
+    background-color: var(--text);
+    border-bottom: 5px solid var(--accentLight);
+}
+
+.dropdown-content {
+    position: absolute;
+    background-color: var(--greyDark);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.5);
+    min-width: 160px;
+    display: none;
+    z-index: 10;
+}
+
+.dropdown-content a {
+    color: var(--background);
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    color: var(--background);
+    background: var(--text);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.main img {
+    width: 200px;
+    margin: 16px;
+    float: right;
 }
 
 /*================ PAGE LAYOUT ================*/
@@ -103,7 +136,7 @@ a:hover {
     margin-left: -600px;
     left: 50%;
     top: 0%;
-    overflow: hidden;
+    /* overflow: visible; */
 }
 
 .menu {
