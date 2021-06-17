@@ -1,3 +1,11 @@
+function start() {
+    var url = new URL(window.location.href);
+    var id = url.hash.replace("#", "");
+
+    if (id) show(id);
+    else show("home");
+}
+
 function show(x) {
     var id = [
         "home",
@@ -12,8 +20,4 @@ function show(x) {
     }
 
     document.getElementById(x).style.display = "block";
-}
-
-function load(url) {
-    document.getElementById("frame").src = url;
 }

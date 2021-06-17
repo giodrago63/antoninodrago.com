@@ -9,18 +9,18 @@
     <script src="script.js"></script>
 </head>
 
-<body>
+<body onload="start()">
     <div class="page">
         <div class="header-wrap">
             <div class="header">
                 <h1>Antonino Drago</h1>
 
                 <div class="menu">
-                    <button onclick="show('home')">Home</button>
-                    <button onclick="show('attivita')">Attività</button>
-                    <button onclick="show('pubblicazioni')">Pubblicazioni</button>
-                    <button onclick="show('valori')">Valori</button>
-                    <button onclick="show('materiali')">Materiali</button>
+                    <a href="#home"><button onclick="show('home')">Home</button></a>
+                    <a href="#attivita"><button onclick="show('attivita')">Attività</button></a>
+                    <a href="#pubblicazioni"><button onclick="show('pubblicazioni')">Pubblicazioni</button></a>
+                    <a href="#valori"><button onclick="show('valori')">Valori</button></a>
+                    <a href="#materiali"><button onclick="show('materiali')">Materiali</button></a>
                 </div><!-- .menu -->
             </div><!-- .header -->
         </div><!-- .header-wrap -->
