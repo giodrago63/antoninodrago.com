@@ -6,23 +6,12 @@ function start() {
     else show("home");
 }
 
-function show(x) {
-    var id = [
-        "home",
-        "attivita1",
-        "attivita2",
-        "attivita3",
-        "pubblicazioni1",
-        "pubblicazioni2",
-        "pubblicazioni3",
-        "materiali1",
-        "materiali2",
-        "materiali3"
-    ]
+function show(id) {
+    var x = document.getElementsByClassName("main");
 
-    for (i in id) {
-        document.getElementById(id[i]).style.display = "none";
+    for (var i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
     }
 
-    document.getElementById(x).style.display = "block";
+    document.getElementById(id).style.display = "block";
 }
