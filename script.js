@@ -15,3 +15,20 @@ function show(id) {
 
     document.getElementById(id).style.display = "block";
 }
+
+function switchLang() {
+    var it = document.getElementsByClassName("it");
+    var en = document.getElementsByClassName("en");
+
+    for (var i = 0; i < it.length; i++) {
+        if (it[i].style.display == "none") {
+            en[i].style.display = "none";
+            it[i].style.display = "block";
+        }
+
+        else {
+            it[i].style.display = "none";
+            en[i].style.display = "block";
+        }
+    }
+}
