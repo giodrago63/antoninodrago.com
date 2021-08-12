@@ -19,8 +19,9 @@ function show(id) {
 function switchLang() {
     var it = document.getElementsByClassName("it");
     var en = document.getElementsByClassName("en");
+    var x = Math.max(it.length, en.length);
 
-    for (var i = 0; i < it.length; i++) {
+    for (var i = 0; i < x; i++) {
         if (it[i].style.display == "none") {
             en[i].style.display = "none";
             it[i].style.display = "block";
