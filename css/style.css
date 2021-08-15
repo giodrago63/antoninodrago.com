@@ -35,6 +35,11 @@ p.list {
     padding-bottom: 16px;
 }
 
+li {
+    margin-left: 16px;
+    padding-bottom: 16px;
+}
+
 a, a:visited {
     color: var(--accentMedium);
     cursor: pointer;
@@ -158,7 +163,7 @@ button {
     position: fixed;
     width: 100%;
     top: 0;
-    background: var(--greyDark);
+    background: var(--header); 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
